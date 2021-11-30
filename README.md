@@ -3,7 +3,7 @@
 ### Project Description
 AR CPR Trainer
 
-Myself (Esther Putman) and Isha Kanu have teamed up to develop an Augmented Reality CPR trainer. Our idea is that many people are nervous to perform CPR, even if they are trained, because they fear they don't fully know the instructions. A mixed reality display like HoloLens could be kept as a part of AED devices to guide civilians through performing CPR in emergency scenarios. We plan to develop an AR environment that displays the Red Cross CPR instructions including scene safety, calling 911, checking airway, and performing compressions. The pace for compressions could be provided as an audio or visual aid. We have access to a HoloLens we plan to use for demonstration. We would develop this environment in Unity using Microsoft's Mixed reality toolkit.
+Our idea is that many people are nervous to perform CPR, even if they are trained, because they fear they don't fully know the instructions. A mixed reality display like HoloLens could be kept as a part of AED devices to guide civilians through performing CPR in emergency scenarios. We plan to develop an AR environment that displays the Red Cross CPR instructions including scene safety, calling 911, checking airway, and performing compressions. The pace for compressions could be provided as an audio or visual aid. We have access to a HoloLens we plan to use for demonstration. We would develop this environment in Unity using Microsoft's Mixed reality toolkit.
 
 ### Instructions for CPR
 Sourced from the [American Red Cross](https://www.redcross.org/take-a-class/cpr/performing-cpr/cpr-steps)
