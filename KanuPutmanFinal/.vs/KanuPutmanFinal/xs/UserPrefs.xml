@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{5D20C37B-C2ED-AECD-0675-7512A56949E8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StartButton.cs">
+    <Files>
+      <File FileName="Assets/StartButton.cs" Line="20" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KanuPutmanFinal" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Microsoft.MixedReality.Toolkit PreferredExecutionTarget="275fa222-85b4-4710-a19a-9b5ca8727e06" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="15fabcd1-75e3-4ec8-9685-3591f9a0384b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
