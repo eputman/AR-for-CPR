@@ -28,11 +28,18 @@ When we decided to create an AR application to assist in performing CPR, we imme
 Figma Slide Link: https://www.figma.com/proto/VLd5kKy1kRDH1e0Px1JBTZ/IKEP_Figma-Toolkit-for-MRTK-%2F-HoloLens?node-id=11025%3A1685&scaling=contain&page-id=11025%3A1684
 
 #### How to use the AR CPR Guide
-Simply, the user will need to wear their HoloLens, open the guide, and use the 'Proceed' button to click through the guide.
+Simply, the user will need to wear their HoloLens, open the guide, and use the 'Proceed' button to click through the guide. 
+Pressing the button can be done by using your gaze to bring the cursor over the button. When your finger is raised, the button will be selected (as indicated by the hover light). When you want to press the button, you can bend your finger forward (as if trying to tap the button) to click. 
+When the user reaches instructions that require compressions, audio guiding the ideal rate (100 BPM) will play. 
 
 #### Immersion and Interaction
 The Hololens assists in providing both immersion and interactivity. By wearing the HoloLens, the user experiences a mixed reality immersion because they are visually being placed in a computer-generated environment that is augmented on their real-world view. There is audio immersion because the user hears a sound that correlates to the correct pacing of compressions. Also, there is a level of immersion from having the foam available to practice compressions with. Since the foam is 2 inches thick, a full compression of the foam is equivalent to the depth of compression that is needed on a human body.
 
 The HoloLens adds to the interactivity because the user can make gestures in the real world that are recognized and applied to the virtual environment. While using the CPR guide, the user uses a selection technique to press through the slide. Specifically, the user uses the air tap gesture to press a button, which incorporates a collider to recognize the user's air tap. The button has varying light functions offering signals to the user. For example, hovering over the button highlights the button to signal that the user's finger is correctly over the button. When the user taps the button, the button light fades out a bit to show that the button has been pressed then returns to its original lighting after the release of the button press.
+
+Interactions in HoloLens can be very difficult to develop. In order to make them work, we had to carefully define our coordinates, plane distances, and camera clipping planes to make a comfortable experience. MRTK came with prefab buttons that had suggested plane distances for push interactions, which helped us guide the scale of other objects in our experience. We designed the instructions to proceed with a button press. Audio guiding the desired rate of compressions starts when instructions require compressions, and stops when transitioning out of those steps. 
+
+The next challenge came with wanting the instructions to appear similar to a heads up display, where they were always in view regardless of gaze. This was important for integrating the instructions into the experience of learning CPR, rather than requiring a change in head position that might distract from the task. At first, we tried to implement this using a canvas with a camera screen space overlay. While this provided a stable placement of instructions in the user’s field of view, they no longer registered interactions. This is due to how a screen space overlay canvas works by creating a 2D perspective. We then switched to a solver system, which updates the position of an object using information from a tracked object. HoloLens provides head tracking, which we used to make sure that the CPR instructions remained within a radial cone of view projected from the tracked head. If the user moves their gaze beyond that cone, the instructions will follow to remain in sight. 
+
 
 #### Testing Experience
