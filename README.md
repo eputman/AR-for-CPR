@@ -1,7 +1,7 @@
 ### Project 4: VR/AR for Social Good!
 ### Isha Kanu and Esther Putman
-#### ATLS-CSCI 5616-001
-#### December 11, 2021
+ATLS-CSCI 5616-001
+December 11, 2021
 #### Unity Version: 2019.4.33f1
 
 ## Project Title: AR CPR Guide
